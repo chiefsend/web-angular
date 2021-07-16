@@ -6,14 +6,14 @@ import { PublicComponent } from "./public/public.component";
 import { UploadComponent } from "./upload/upload.component";
 
 const routes: Routes = [
-	{ path: "upload", component: UploadComponent },
-	{ path: "download/:id", component: DownloadComponent },
-	{ path: "public", component: PublicComponent },
-	{ path: "**", component: HomeComponent },
+  { path: "upload", component: UploadComponent },
+  { path: "download/:id", component: DownloadComponent },
+  { path: "public", component: PublicComponent },
+  { path: "**", component: HomeComponent },
 ];
 
 @NgModule({
-	imports: [RouterModule.forRoot(routes)],
-	exports: [RouterModule],
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}

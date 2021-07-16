@@ -11,10 +11,11 @@ import { FooterComponent } from "./footer/footer.component";
 import { ApiService } from "./api/api.service";
 import { PublicComponent } from './public/public.component';
 import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
 	declarations: [AppComponent, UploadComponent, DownloadComponent, HeaderComponent, FooterComponent, PublicComponent, HomeComponent],
-	imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+	imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule],
 	providers: [ApiService],
 	bootstrap: [AppComponent],
 })
